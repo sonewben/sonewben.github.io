@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[next主题配置]]></title>
+    <url>%2F2018%2F03%2F17%2F20180317%2F</url>
+    <content type="text"><![CDATA[使用版本 hexo: 3.6.0 hexo-cli: 1.0.4 next: 6.0.6 开启字词统计和阅读时长推荐功能在站点根目录下安装插件hexo-symbols-count-time：1npm install hexo-symbols-count-time --save 在站点主配置文件_config.yml添加如下内容：12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true 打开themes/next下的_config.yml,搜索关键字wordcount,默认已开启该功能:12345678# Post wordcount display settings# Dependencies: https://github.com/theme-next/hexo-symbols-count-timesymbols_count_time: separated_meta: true item_text_post: true item_text_total: false awl: 5 wpm: 200 开启本地搜索在站点根目录下安装本地搜索插件:1npm install hexo-generator-searchdb --save 在站点主配置_config.yml添加如下内容：12345search: path: search.xml field: post format: html limit: 10000 打开themes/next下的_config.yml,搜索关键字local_search,把enable设置为true：123456# Local search# Dependencies: https://github.com/theme-next/hexo-generator-searchdblocal_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button 开启卜算子统计功能 打开主题next的配置文件_config.yml,搜索关键字busuanzi,把enable设置为true:12345678910# Show Views/Visitors of the website/page with busuanzi.# Get more information on http://ibruce.info/2015/04/04/busuanzi/busuanzi_count: enable: true total_visitors: true total_visitors_icon: user total_views: true total_views_icon: eye post_views: true post_views_icon: eye 参考文档：hexo-symbols-count-time Hexo-Next-主题优化(二)]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>next</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Github Flavored Markdown使用教程]]></title>
+    <url>%2F2018%2F03%2F16%2F20180316%2F</url>
+    <content type="text"><![CDATA[标题文字前增加1到6个”#”成为标题,”#”的数量影响标题字体的大小，例如：123# The largest heading###### The smallest heading The largest headingThe smallest heading文本样式文字可以通过一些简单的语法来成为粗体字（bold）、斜体字（italic）、删除线（strikethrough）: 语法 显示 **bold** bold __bold__ bold *italic* italic _italic_ italic **bold italic bold** bold italic bold ~~strikethrough~~ strikethrough 引用文本1&gt;quoting text quoting text 引用代码代码块用```开始和结束： ``` quoting code ``` 1quoting code 语法高亮： ```java public void test(){ System.out.println(“Hello world!”);} ``` 1234public void test()&#123; System.out.println("Hello world!");&#125; 链接行内式: 1My blogsite [home](https://sonewben.github.io/). My blogsite home. 1My blogsite [home](https://sonewben.github.io/ &quot;title&quot;). My blogsite home.参考式: 12345My blogsite [home][id] .接着在文本任意处定义链接:[id]: https://sonewben.github.io/ &quot;title&quot; 图片行内式: 一个感叹号! 接着一个方括号，里面放上图片的替代文字 接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字 1![Alt text](../image/1.png) 1![Alt text](../image/1.png &quot;title&quot;) 参考式: 123![Alt text][id]接着定义参考：[id]: url/to/image &quot;Optional title attribute&quot; 列表无序列表用*或-: 123* The first line* The second line* The third line 123- The first line- The second line- The third line The first line The second line The third line 有序列表： 1231. one2. two3. three one two three 嵌套列表在嵌套列表中，列表标记字符位于上层文本第一个字符的正下方： 1231. First list item * First nested list item * Second nested list item First list item First nested list item Second nested list item 任务列表已完成的在[ ]里填x: 123- [x] Finish my changes- [ ] Push my commits to GitHub- [ ] Open a pull request Finish my changes Push my commits to GitHub Open a pull request 使用表情使用表情的格式为: :EMOJICODE: 语法 显示 :+1: :+1: :shipit: :shipit: 反斜杠如需显示在语法中有其他意义的字符,可以在其前面加\： 1Let&apos;s rename \*our-new-project\* to \*our-old-project\*. Let’s rename *our-new-project* to *our-old-project*. MarkDown支持以下这些符号前面加上反斜杠来帮助插入普通的符号： 12345678910111213\ 反斜线` 反引号* 星号_ 底线&#123;&#125; 花括号[] 方括号() 括弧# 井字号+ 加号- 减号. 英文句点! 惊叹号 表格通过:的位置来指定表格文字左对齐、居中、右对齐的对齐方式: | Left-aligned | Center-aligned | Right-aligned || :— | :—: | —: || git status | git status | git status || git diff | git diff | git diff | Left-aligned Center-aligned Right-aligned git status git status git status git diff git diff git diff 参考文档 Markdown 语法说明 (简体中文版) Basic writing and formatting syntax Working with advanced formatting]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+</search>
