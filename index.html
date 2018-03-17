@@ -467,8 +467,7 @@
 
       
         
-          
-            <h2 id="使用版本"><a href="#使用版本" class="headerlink" title="使用版本"></a>使用版本</h2><ul>
+          <h2 id="使用的hexo和next版本"><a href="#使用的hexo和next版本" class="headerlink" title="使用的hexo和next版本"></a>使用的hexo和next版本</h2><ul>
 <li><p><strong>hexo: 3.6.0</strong></p>
 </li>
 <li><p><strong>hexo-cli: 1.0.4</strong></p>
@@ -478,15 +477,13 @@
 </ul>
 <h2 id="开启字词统计和阅读时长推荐功能"><a href="#开启字词统计和阅读时长推荐功能" class="headerlink" title="开启字词统计和阅读时长推荐功能"></a>开启字词统计和阅读时长推荐功能</h2><p>在站点根目录下安装插件<code>hexo-symbols-count-time</code>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure></p>
 <p>在站点主配置文件<code>_config.yml</code>添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br></pre></td></tr></table></figure></p>
-<p>打开themes/next下的<code>_config.yml</code>,搜索关键字wordcount,默认已开启该功能:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br><span class="line">  item_text_total: false</span><br><span class="line">  awl: 5</span><br><span class="line">  wpm: 200</span><br></pre></td></tr></table></figure></p>
-<h2 id="开启本地搜索"><a href="#开启本地搜索" class="headerlink" title="开启本地搜索"></a>开启本地搜索</h2><p>在站点根目录下安装本地搜索插件:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
-<p>在站点主配置<code>_config.yml</code>添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
-<p>打开themes/next下的<code>_config.yml</code>,搜索关键字local_search,把enable设置为true：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br></pre></td></tr></table></figure></p>
-<h2 id="开启卜算子统计功能"><a href="#开启卜算子统计功能" class="headerlink" title="开启卜算子统计功能"></a>开启卜算子统计功能</h2><p> 打开主题next的配置文件<code>_config.yml</code>,搜索关键字busuanzi,把enable设置为true:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi/</span><br><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure></p>
-<h2 id="参考文档："><a href="#参考文档：" class="headerlink" title="参考文档："></a>参考文档：</h2><p><a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">hexo-symbols-count-time</a></p>
-<p><a href="https://www.jianshu.com/p/428244cd2caa" target="_blank" rel="noopener">Hexo-Next-主题优化(二)</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/17/20180317/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -655,40 +652,6 @@
         
           <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>文字前增加1到6个”#”成为标题,”#”的数量影响标题字体的大小，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># The largest heading</span><br><span class="line"></span><br><span class="line">###### The smallest heading</span><br></pre></td></tr></table></figure></p>
 <h1 id="The-largest-heading"><a href="#The-largest-heading" class="headerlink" title="The largest heading"></a>The largest heading</h1><h6 id="The-smallest-heading"><a href="#The-smallest-heading" class="headerlink" title="The smallest heading"></a>The smallest heading</h6><h2 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h2><p>文字可以通过一些简单的语法来成为粗体字（bold）、斜体字（italic）、删除线（strikethrough）:</p>
-<table>
-<thead>
-<tr>
-<th>语法</th>
-<th>显示</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>**bold**</td>
-<td><strong>bold</strong></td>
-</tr>
-<tr>
-<td>__bold__</td>
-<td><strong>bold</strong></td>
-</tr>
-<tr>
-<td>*italic*</td>
-<td><em>italic</em></td>
-</tr>
-<tr>
-<td>_italic_</td>
-<td><em>italic</em></td>
-</tr>
-<tr>
-<td>**bold <em>italic</em> bold**</td>
-<td><strong>bold <em>italic</em> bold</strong></td>
-</tr>
-<tr>
-<td>~~strikethrough~~</td>
-<td><del>strikethrough</del></td>
-</tr>
-</tbody>
-</table>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/16/20180316/#more" rel="contents">
